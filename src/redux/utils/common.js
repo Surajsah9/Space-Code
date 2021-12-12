@@ -1,0 +1,12 @@
+export const getuser=()=>{
+const user=localStorage.getItem("userInfo")
+if(user) return JSON.parse(user);
+else return null; 
+}
+export const gettoken=()=>{
+    return localStorage.getItem("userInfo")||null
+}
+
+export const removeuser=()=>{
+    localStorage.removeItem("userInfo")
+}
